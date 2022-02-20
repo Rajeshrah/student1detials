@@ -1,0 +1,31 @@
+<html> 
+<body bgcolor = yellow> 
+<h1 style="text-align: center;fontstyle:  
+normal;color:rebeccapurple">WELCOME TO THE
+DEPARTMENT OF  
+CSE HOMEPAGE</h1> 
+<head>
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+ let  y = document.forms["myForm"]["pass"].value;
+  if (x == "" ||y=="") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+</head>
+
+<h2>JavaScript Validation</h2>
+
+<form name="myForm" action="inde.html" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="fname">
+  password:<input type = password name = "pass">
+  <input type="submit" value="Submit">
+<input type = "reset" value = "clear all">
+</form>
+
+</body>
+</html>
+
